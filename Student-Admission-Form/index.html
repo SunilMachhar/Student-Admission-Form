@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>College Admission Form</h1>
+
+    <form id="admissionForm">
+
+        <label>Student Name:</label>
+        <input type="text" placeholder="Enter your name"required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label>Mobile Number:</label>
+        <input type="tel" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+        <br><br>
+
+        <label>Father's Name:</label>
+        <input type="text" placeholder="Enter father's name" required>
+        <br><br>
+
+        <label>Mother's Name:</label>
+        <input type="text" placeholder="Enter mother's name" required>
+        <br><br>
+
+        <label>City:</label>
+        <input type="text" placeholder="Enter your city" required>
+        <br><br>
+
+        <label>Pin Code:</label>
+        <input type="number" placeholder="Enter pin code" required>
+        <br><br>
+
+        <label>Address:</label>
+        <textarea placeholder="Enter your address" required></textarea>
+        <br><br>
+
+
+        <label>Date of Birth:</label>
+        <input type="date">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" required> Male
+        <input type="radio" name="gender" required> Female
+        <br><br>
+        <label>Course:</label>
+        <select>
+            <option>Select Course</option>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>B.Tech</option>
+            <option>MCA</option>
+            </select>  
+
+        <label for="department">Department:</label>
+
+        <select id="department" name="department">
+            <option value="">Select Department</option>
+            <option value="cs">Computer Science</option>
+            <option value="management">Management</option>
+            <option value="it">Information Technology</option>
+        </select>
+        <br><br>
+        <br><br>
+
+        <label>10th Percentage:</label>
+        <input type="number" placeholder="Enter 10th percentage" min="33" max="100">
+        <br><br>
+
+        <label>12th Percentage:</label>
+        <input type="number" placeholder="Enter 12th percentage" min="33" max="100">
+        <br><br>
+        <label>Student Category:</label>
+        <select>
+            <option>Select Category</option>
+            <option>General</option>
+            <option>OBC</option>
+            <option>SC</option>
+            <option>ST</option>
+        </select>
+        <br><br>
+        <label>Upload Your Photo:</label>
+        <input type="file" accept="image/*">
+        <br><br>
+
+        <label>Upload 10th Marksheet:</label>
+        <input type="file" accept=".pdf,image/*">
+        <br><br>
+
+        <label>Upload 12th Marksheet:</label>
+        <input type="file" accept=".pdf,image/*">
+        <br><br>
+        <br><br>
+
+        <input type="checkbox" id="terms" required>
+        <label for="terms">
+            I agree to the Terms and Conditions
+        </label>
+
+        <br><br>
+
+        
+        <button type="submit">Submit</button>
+    <br><br>
+<hr>
+
+<p>© 2026 College Admission Portal</p>
+<p>All Rights Reserved</p>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
