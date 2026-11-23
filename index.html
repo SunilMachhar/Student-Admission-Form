@@ -13,49 +13,49 @@
 
     <form id="admissionForm">
 
-        <label>Student Name:</label>
-        <input type="text" placeholder="Enter your name"required>
+        <label>Student Name</label>
+        <input type="text" name="studentName" placeholder="Enter Student Name">
         <br><br>
 
         <label>Email:</label>
-        <input type="email" placeholder="Enter your email" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
         <br><br>
 
         <label>Mobile Number:</label>
-        <input type="tel" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+        <input type="tel" name="mobileNumber" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
         <br><br>
 
         <label>Father's Name:</label>
-        <input type="text" placeholder="Enter father's name" required>
+        <input type="text" name="fathersName" placeholder="Enter father's name" required>
         <br><br>
 
         <label>Mother's Name:</label>
-        <input type="text" placeholder="Enter mother's name" required>
+        <input type="text" name="MothersName" placeholder="Enter mother's name" required>
         <br><br>
 
         <label>City:</label>
-        <input type="text" placeholder="Enter your city" required>
+        <input type="text" name="City" placeholder="Enter your city" required>
         <br><br>
 
         <label>Pin Code:</label>
-        <input type="number" placeholder="Enter pin code" required>
+        <input type="number" name="PinCode" placeholder="Enter pin code" required>
         <br><br>
 
         <label>Address:</label>
-        <textarea placeholder="Enter your address" required></textarea>
+        <textarea name="Address" placeholder="Enter your address" required></textarea>
         <br><br>
 
 
         <label>Date of Birth:</label>
-        <input type="date">
+        <input type="date" name="DateOfBirth">
         <br><br>
 
         <label>Gender:</label>
-        <input type="radio" name="gender" required> Male
-        <input type="radio" name="gender" required> Female
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female" required> Female
         <br><br>
         <label>Course:</label>
-        <select>
+        <select name="course">
             <option>Select Course</option>
             <option>BCA</option>
             <option>BBA</option>
@@ -75,14 +75,14 @@
         <br><br>
 
         <label>10th Percentage:</label>
-        <input type="number" placeholder="Enter 10th percentage" min="33" max="100">
+        <input type="number" name="tenthPercentage" placeholder="Enter 10th percentage" min="33" max="100">
         <br><br>
 
         <label>12th Percentage:</label>
-        <input type="number" placeholder="Enter 12th percentage" min="33" max="100">
+        <input type="number" name="twelfthPercentage" placeholder="Enter 12th percentage" min="33" max="100">
         <br><br>
         <label>Student Category:</label>
-        <select>
+        <select name="category">
             <option>Select Category</option>
             <option>General</option>
             <option>OBC</option>
@@ -91,15 +91,15 @@
         </select>
         <br><br>
         <label>Upload Your Photo:</label>
-        <input type="file" accept="image/*">
+        <input type="file" name="photo" accept="image/*">
         <br><br>
 
         <label>Upload 10th Marksheet:</label>
-        <input type="file" accept=".pdf,image/*">
+        <input type="file" name="tenthMarksheet" accept=".pdf,image/*">
         <br><br>
 
         <label>Upload 12th Marksheet:</label>
-        <input type="file" accept=".pdf,image/*">
+        <input type="file" name="twelfthMarksheet" accept=".pdf,image/*">
         <br><br>
         <br><br>
 
