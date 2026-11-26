@@ -12,6 +12,6 @@ form.addEventListener("submit", function(event) {
 
     localStorage.setItem("students", JSON.stringify(students));
 
-    alert("Form Submitted Successfully!");
+   alert("Demo Form Submitted! Data saved locally in your browser.");
     form.reset();
 });
